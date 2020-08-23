@@ -10,6 +10,10 @@ struct ContentView: View {
                 NavigationLink(destination: GithubMessageView()) {
                     Text("Commit message")
                 }
+                
+                NavigationLink(destination: GitCommandView()) {
+                    Text("Git command")
+                }
             }
             .navigationBarTitle("Menu")
         }

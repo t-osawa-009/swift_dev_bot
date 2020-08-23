@@ -28,6 +28,9 @@
 		17EA695224F2684D000B5E9C /* TextBindingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA695124F2684D000B5E9C /* TextBindingManager.swift */; };
 		17EA695624F26FBE000B5E9C /* PasteboardWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA695424F26FBE000B5E9C /* PasteboardWrapper.swift */; };
 		17EA695D24F2772A000B5E9C /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 17EA695C24F2772A000B5E9C /* SwiftUIKit */; };
+		17EA695F24F27BCC000B5E9C /* GitCommand.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17EA695E24F27BCC000B5E9C /* GitCommand.plist */; };
+		17EA696124F27D8A000B5E9C /* GitCommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA696024F27D8A000B5E9C /* GitCommandView.swift */; };
+		17EA696324F27DEE000B5E9C /* GitCommandState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA696224F27DEE000B5E9C /* GitCommandState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		17EA694F24F26119000B5E9C /* PlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistParser.swift; sourceTree = "<group>"; };
 		17EA695124F2684D000B5E9C /* TextBindingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBindingManager.swift; sourceTree = "<group>"; };
 		17EA695424F26FBE000B5E9C /* PasteboardWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasteboardWrapper.swift; sourceTree = "<group>"; };
+		17EA695E24F27BCC000B5E9C /* GitCommand.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GitCommand.plist; sourceTree = "<group>"; };
+		17EA696024F27D8A000B5E9C /* GitCommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitCommandView.swift; sourceTree = "<group>"; };
+		17EA696224F27DEE000B5E9C /* GitCommandState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitCommandState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 				17CB010D24F24C99007FCCE5 /* AppReducer.swift */,
 				17CB010B24F24C45007FCCE5 /* AppState.swift */,
 				17CB011724F25106007FCCE5 /* GithubMessageState.swift */,
+				17EA696224F27DEE000B5E9C /* GitCommandState.swift */,
 				17CB010F24F24CC4007FCCE5 /* Reducer.swift */,
 				17CB011124F24CEE007FCCE5 /* Store.swift */,
 			);
@@ -131,6 +138,7 @@
 			children = (
 				17CB00F924F246EB007FCCE5 /* ContentView.swift */,
 				17CB011B24F251E7007FCCE5 /* GithubMessageView.swift */,
+				17EA696024F27D8A000B5E9C /* GitCommandView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				17EA694C24F25CF1000B5E9C /* CommitMessage.plist */,
+				17EA695E24F27BCC000B5E9C /* GitCommand.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -257,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EA695F24F27BCC000B5E9C /* GitCommand.plist in Resources */,
 				17CB00FC24F246EE007FCCE5 /* Assets.xcassets in Resources */,
 				17EA694D24F25CF1000B5E9C /* CommitMessage.plist in Resources */,
 				17CB010224F246EE007FCCE5 /* LaunchScreen.storyboard in Resources */,
@@ -275,7 +285,9 @@
 				17CB00F624F246EB007FCCE5 /* AppDelegate.swift in Sources */,
 				17CB010E24F24C99007FCCE5 /* AppReducer.swift in Sources */,
 				17CB010C24F24C45007FCCE5 /* AppState.swift in Sources */,
+				17EA696124F27D8A000B5E9C /* GitCommandView.swift in Sources */,
 				17CB00FA24F246EB007FCCE5 /* ContentView.swift in Sources */,
+				17EA696324F27DEE000B5E9C /* GitCommandState.swift in Sources */,
 				17CB012524F25953007FCCE5 /* GithubMessage.swift in Sources */,
 				17CB011824F25106007FCCE5 /* GithubMessageState.swift in Sources */,
 				17CB011C24F251E7007FCCE5 /* GithubMessageView.swift in Sources */,

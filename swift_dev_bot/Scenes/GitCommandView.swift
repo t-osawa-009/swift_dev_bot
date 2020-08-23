@@ -1,7 +1,6 @@
 import SwiftUI
-import SwiftUIKit
 
-struct GithubMessageView: View {
+struct GitCommandView: View {
     @EnvironmentObject
     private var store: Store<AppState, ActionType>
     @EnvironmentObject
@@ -14,13 +13,13 @@ struct GithubMessageView: View {
     var body: some View {
         VStack {
             SearchBarView(text: newMessage, onCommit: {
-                self.store.send(GithubMessageAction.search(self.newMessage))
+                self.store.send(GitCommandAction.search(self.newMessage))
             }) { (text) in
                 self.newMessage = text
-                self.store.send(GithubMessageAction.search(text))
+                self.store.send(GitCommandAction.search(text))
             }
             
-            List(store.state.githubMessageState.githubMessages) { item in
+            List(store.state.gitCommandState.githubMessages) { item in
                 Text(item.message).onTapGesture {
                     PasteboardWrapper.default.copy(item.message)
                     self.isToastPresented.toggle()
@@ -28,17 +27,17 @@ struct GithubMessageView: View {
             }
         }
         .onAppear(perform: {
-            self.store.send(GithubMessageAction.search(self.newMessage))
+            self.store.send(GitCommandAction.search(self.newMessage))
         })
-        .toast(isPresented: $isToastPresented,
-               text: "Copy done",
-               background: Color.primary.colorInvert(),
-               duration: TimeInterval(0.8))
+            .toast(isPresented: $isToastPresented,
+                   text: "Copy done",
+                   background: Color.primary.colorInvert(),
+                   duration: TimeInterval(0.8))
     }
 }
 
-struct GithubMessageView_Previews: PreviewProvider {
+struct GitCommandView_Previews: PreviewProvider {
     static var previews: some View {
-        GithubMessageView()
+        GitCommandView()
     }
 }

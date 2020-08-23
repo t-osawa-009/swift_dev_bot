@@ -2,7 +2,7 @@ import Foundation
 
 struct GithubMessageState {
     var githubMessages: [GithubMessage] = []
-    fileprivate static let array = PlistParser.parseConfig()
+    fileprivate static let array = PlistParser.parseCommitMessage()
 }
 
 extension GithubMessageState {
@@ -11,8 +11,12 @@ extension GithubMessageState {
         var state = state
         switch action {
         case .search(let text):
-            let array = GithubMessageState.array.filter({ $0.lowercased().contains(text.lowercased())})
-            state.githubMessages = array.map({ GithubMessage(message: $0) })
+            if text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                state.githubMessages = GithubMessageState.array.map({ GithubMessage(message: $0) })
+            } else {
+                let array = GithubMessageState.array.lazy.filter({ $0.lowercased().contains(text.lowercased())})
+                state.githubMessages = array.map({ GithubMessage(message: $0) })
+            }
         }
         return state
     }

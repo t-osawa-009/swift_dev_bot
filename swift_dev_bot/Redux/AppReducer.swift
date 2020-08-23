@@ -5,6 +5,7 @@ extension Reducer where State == AppState, Action == ActionType {
         return Reducer { state, action in
             return Reducer.sync { state in
                 state.githubMessageState = GithubMessageState.reducer(action: action, state: state.githubMessageState)
+                state.gitCommandState = GitCommandState.reducer(action: action, state: state.gitCommandState)
             }
         }
     }

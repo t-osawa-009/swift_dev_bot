@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <string>Add -enable-experimental-nested-generic-types frontend flag</string>
+        <string>Add --main-process flag to run specs in the main process</string>
+        <string>Add Throws flag and ThrowsLoc to AbstractFunctionDecl</string>
+        <string>Add &quot;event&quot; parameter for &quot;click&quot; handler of MenuItem</string>
+        <string>Add File &gt; Exit menu on Windows</string>
+        <string>Add npm start script</string>
+        <string>Add build script</string>
+        <string>Add SkUserConfig.h with blank SkDebugf macro</string>
+        <string>Use args.resourcePath instead of args.devResourcePath</string>
+        <string>Use arrays instead of while loops</string>
+        <string>Use auto instead of repeating explicit class names</string>
+        <string>Use weak pointer instead of manual bookkeeping</string>
+        <string>Change all uses of &apos;CInt&apos; to &apos;Int32&apos; in the SDK overlay</string>
+        <string>Change Integer#year to return a Fixnum instead of a Float to improve consistency</string>
+        <string>Add support for closure contexts to readMetadataFromInstance()</string>
+        <string>Add support for closure contexts to readMetadataFromInstance()</string>
+        <string>Add support for activating and deactivating package-specific keymaps</string>
+        <string>Add support for launching HTML files directly</string>
+        <string>Add support for allocators that require tensors with zero</string>
+        <string>Make it possible to call reflect multiple times</string>
+        <string>Make it possible to set a data type for variables that come out of constants</string>
+        <string>Allow atom-pane to be shrunk independently of its contents' width</string>
+        <string>Allow null TextEditorComponent::domNode during visibility check</string>
+        <string>Use const for util require</string>
+        <string>Use FoldingSetNode for ProtocolType</string>
+        <string>Use unique text editor title in window and tab titles</string>
+        <string>Use an empty object if metadata is ~null</string>
+        <string>Use target_link_libraries for fat executable dependencies</string>
+        <string>Use existing flatMapToOptionalTests dataset</string>
+        <string>Make the clone function more generic</string>
+        <string>Make IO faster for v8 compile cache</string>
+        <string>Make model constructor argument to addViewProvider optional</string>
+        <string>Make Browser::Quit more robust</string>
+        <string>Make Menu.getApplicationMenu() public</string>
+        <string>Improve incompatible native module error message</string>
+        <string>Improve readability of multi-line command</string>
+        <string>Improve folds behavior when duplicating lines</string>
+        <string>Improve deprecated message on webPreferences options</string>
+        <string>Don't bail reading a metadata instance if swift_isaMask isn't available</string>
+        <string>Don't exit until the parent asks for an instance</string>
+        <string>Don't include Parent pointer in Nominal/BoundGeneric TypeRef uniquing</string>
+        <string>Don't use MatchesExtension for matching filters</string>
+        <string>Don't use ES6 class for AutoUpdater windows class</string>
+        <string>Don't use MatchesExtension for matching filters</string>
+        <string>Avoid distinct if a subquery has already materialized</string>
+        <string>Avoid infinite recursion when bad values are passed to tz aware fields</string>
+        <string>Emit capture descriptors in their own section</string>
+        <string>Emit field metadata for @objc classes</string>
+        <string>Emit reflection info for protocols</string>
+        <string>Add assert for role with app name in label</string>
+        <string>Add assertions for no available bookmark</string>
+        <string>Add asserts for properties</string>
+        <string>Remove some dead code</string>
+        <string>Remove some unused enum declaration</string>
+        <string>Remove unused variable</string>
+        <string>Remove unnecessary line feeds</string>
+        <string>Remove trailing whitespace</string>
+        <string>Remove debug statement</string>
+        <string>Remove redundant mapType{Into,OutOf}Context() calls</string>
+        <string>Move function signature analysis to a Util</string>
+        <string>Move markInvalidGenericSignature() to a method on TypeChecker</string>
+        <string>Move diagnostic for stored properties in protocols from type checking to validation</string>
+        <string>Move Doxygen converter into a proper MarkupASTNode visitor</string>
+        <string>Move Module require to top</string>
+        <string>Rename environment -> environmentHelpers</string>
+        <string>Rename watchProjectPath to watchProjectPaths</string>
+        <string>Rename generic arguments</string>
+        <string>s/grammarName/grammar</string>
+        <string>fullVersion -> writeFullVersion</string>
+        <string>Fix typos</string>
+        <string>Fix a typo</string>
+        <string>Fix a test</string>
+        <string>Fix typo in DevTools Extensions tutorial</string>
+        <string>Fix DownloadingState typo</string>
+        <string>Fix includes order</string>
+        <string>Fix mistake in tvOS availability</string>
+        <string>Fix cpplint warnings</string>
+        <string>Fix wrong markdown</string>
+        <string>Add missing return</string>
+        <string>Add missing period in comment</string>
+        <string>Fix a memory leak in FSO</string>
+        <string>Fix lifetime issues in ManagedBuffer.value</string>
+        <string>Fix mangling for nested generic types</string>
+        <string>Fix memory corruption in another circularity check</string>
+        <string>Fix thread-unsafety in Process.Argument initialization</string>
+        <string>Fix "Object has been destroyed" error in "page-title-updated" event</string>
+        <string>Make Error.prepareStackTrace read-only (again)</string>
+        <string>Make string slicing tests standalone</string>
+        <string>Make sure showing success dialogs works correctly</string>
+        <string>Make sure to emit closure bodies only once</string>
+        <string>Make sure all native resources get freed on exit</string>
+        <string>Make sure temp file will be cleaned up when base::Move fails</string>
+        <string>Add tests for pending pane items</string>
+        <string>Add validation test for projecting existentials</string>
+        <string>Add a basic test for opening an editor in largeFileMode if >= 2MB</string>
+        <string>Add specs for moveSelectionLeft()</string>
+        <string>Add failing spec for Menu.buildFromTemplate</string>
+        <string>Add comment about map key/values</string>
+        <string>Add TODO about blinkFeatures -> enableBlinkFeatures</string>
+        <string>Add a design-decisions section to the CONTRIBUTING guide</string>
+        <string>Add style.less examples</string>
+        <string>Add docs for app.getLocale()</string>
+        <string>Add documentation for --proxy-bypass-list</string>
+        <string>Remove a redundant test</string>
+        <string>Remove an empty test</string>
+        <string>Fix comment</string>
+        <string>Fix outdated comment</string>
+        <string>Fix failing specs on Windows</string>
+        <string>Fix PersistentVector test for powerpc64{le}</string>
+        <string>Update specs for deferred activation hooks</string>
+        <string>Update successor/predecessor in validation tests</string>
+        <string>Update some tests to use LifetimeTracked instead of hand-rolled canaries</string>
+        <string>Update README.md</string>
+        <string>Update docs for marker callback</string>
+        <string>Update documentation for mark*Position</string>
+        <string>Update link to solarized-dark-syntax</string>
+        <string>Improve documentation of ses.cookies.set()</string>
+        <string>Improve readability in CSRF section of guide</string>
+        <string>Improve spec description</string>
+    </array>
+</plist>
